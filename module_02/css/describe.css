@@ -1,0 +1,80 @@
+.container {
+    font-family: "PlayfairDisplay" sans-serif;
+    width: 900px;
+    text-align: center;
+    margin: auto;
+}
+
+.menu {
+    padding: 75px 0 100px;
+}
+
+.link {
+    color: #c0c0c0;
+    display: inline-block;
+    margin-right: 105px;
+    tab-size: 14px;
+    text-transform: uppercase;
+}
+
+.link:last-child {
+    margin-right: 0;
+}
+
+.blue {
+    color: #14aff5;
+}
+
+.describe {
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    margin-right: 60px;
+    vertical-align: top;
+    width: 420px;
+    padding-bottom: 135px;
+}
+
+.card:nth-child(2n+2) {
+    margin-right: 0;
+}
+
+.card:nth-last-child(-n+2) {
+    padding-bottom: 0;
+}
+
+.text-menu {
+    font-family: "Ubuntu" sans-serif;
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #c7c1b6;
+    padding: 30px 0 30px;
+}
+
+.title {
+    font-family: "PlayfairDisplay" sans-serif;
+    font-size: 30px;
+    color: #626262;
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.text {
+    font-family: "PlayfairDisplay" sans-serif;
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+}
+
+.button-load {
+    padding: 20px 35px;
+    font-size: 20px;
+    font-family: "PlayfairDisplay" sans-serif;
+    margin-bottom: 70px;
+    background-color: #fff;
+    color: #777;
+}
