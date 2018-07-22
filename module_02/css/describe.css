@@ -16,17 +16,21 @@
     tab-size: 14px;
     text-transform: uppercase;
 }
+.link:hover {
+    color: #14aff5
+}
 
 .link:last-child {
     margin-right: 0;
 }
 
-.blue {
-    color: #14aff5;
-}
 
-.describe {
+
+.info-cards {
     font-size: 0;
+    width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
 .card {
@@ -34,15 +38,15 @@
     margin-right: 60px;
     vertical-align: top;
     width: 420px;
-    padding-bottom: 135px;
+    margin-bottom: 135px;
 }
 
 .card:nth-child(2n+2) {
     margin-right: 0;
 }
 
-.card:nth-last-child(-n+2) {
-    padding-bottom: 0;
+.card:nth-child(n+4) {
+    margin-bottom: 0;
 }
 
 .text-menu {
@@ -52,6 +56,8 @@
     text-transform: uppercase;
     color: #c7c1b6;
     padding: 30px 0 30px;
+    font-weight: 300;
+    
 }
 
 .title {
@@ -60,7 +66,8 @@
     color: #626262;
     text-align: left;
     font-weight: 500;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    width: 400px;
 }
 
 .text {
@@ -68,13 +75,18 @@
     font-size: 14px;
     color: #777;
     text-align: left;
+    font-weight: normal;
+    width: 420px;
 }
 
 .button-load {
     padding: 20px 35px;
     font-size: 20px;
     font-family: "PlayfairDisplay" sans-serif;
-    margin-bottom: 70px;
-    background-color: #fff;
+    margin: 50px 0 70px 0;
+    background-color: none;
     color: #777;
+    
+    
+    
 }
