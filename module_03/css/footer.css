@@ -1,0 +1,54 @@
+.news {
+    padding: 100px 0 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+.news-cards {
+    font-size: 0;
+}
+.card {
+    float: left;
+    margin-right: 30px;
+    display: block;
+}
+.card:last-child {
+    margin-right: 0;
+}
+.news-img {
+    height: 260px;
+    width: 350px;
+    padding-bottom: 15px;
+}
+.text {
+    font-size: 18px;
+    color: #555252;
+    width: 350px;
+    font-weight: 600;
+}
+.text::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 135px;
+    background-color:  #1abc9c;
+    vertical-align: middle;
+    margin: 15px 0 30px 0;
+}
+@font-face {
+    font-family: myriad-pro, sans-serif;
+    src: url(myriad.otf);
+}
+.cards-text {
+font-family: myriad-pro, sans-serif;
+font-style: normal;
+font-weight: 400;
+color: #555252;
+font-size: 14px;
+width: 350px;
+padding-bottom: 18px;
+}
+.btn {
+    padding: 16px 40px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+} 
