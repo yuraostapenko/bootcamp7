@@ -1,0 +1,17 @@
+.wrapper-gray {
+    background-color: #323232;
+}
+.footer {
+    padding: 35px 0 35px 0;
+}
+.footer-text {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans' sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.footer-text:hover {
+    color: #1abc9c;
+}
