@@ -1,0 +1,39 @@
+
+.header {
+    background-color: #fff;    
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 30px;
+    min-width: 400px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo {
+    margin-top: 30px;
+}
+.nav-list {
+    display: flex;
+    margin-top: 40px;
+}
+.list-menu {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #a2e5d9;
+    text-transform: uppercase;
+}
+.list-item {
+    list-style: none;
+    margin-right: 55px;    
+}
+.list-menu:hover {
+    padding-bottom: 12px;
+    color: #f38181;
+    border-bottom: 3px solid #f38181;
+}
+.list-item:nth-child(5) {
+    margin-right: 0;
+}
