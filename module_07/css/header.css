@@ -1,0 +1,47 @@
+
+.wrapper-white {
+    background-color: #fff;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    width: 940px;
+    height: 146px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-family: "Wisdom Script";
+    
+    color: #ffeaa1;
+    
+}
+.menu {
+    display: flex;
+    width: 480px;
+    justify-content: space-between;
+    
+
+   
+}
+
+.menu-item {
+    list-style: none;
+}
+.link-menu {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+}
+.link-menu:hover {
+    color: #ffeaa1;
+}

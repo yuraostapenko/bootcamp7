@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Wisdom Script";
+    
+    src: url("../fonts/wisdom_script_aj-webfont.woff") format("woof"), url("../fonts/wisdom_script_aj-webfont.woff2") format('woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Droid Serif Italic";
+    src: url("../fonts/droidserif-italic-webfont.woff") format("woff"), url("../fonts/droidserif-italic-webfont.woff2") format("woff2");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("../fonts/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/robotoslab-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+
+}
