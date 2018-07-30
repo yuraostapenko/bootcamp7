@@ -1,37 +1,41 @@
+.header {
+    width: 1110px;
+    margin: auto;
+}
+
 .logo {
     width: 75px;
     height: 20px;
     float: left;
     margin-top: 40px;
 }
+
 .menu {
     text-decoration: none;
     margin: auto;
     float: right;
     padding-top: 40px;
-    
-    
+     
 }
-.menu-item {
-    
+
+.menu-item {    
     float: left;
     display: inline-block;
     font-size: 14px;
     margin-right: 35px;
-    
-
 }
+
 .menu-link {
     text-decoration: none;
     text-transform: uppercase;
     color: #0f0101;
 }
+
 .menu-link:hover {
     color: #1abc9c;
 }
+
 .menu-item:last-child {
     margin-right: 0;
 }
-.header {
-    margin-bottom: 110px;
-}
+

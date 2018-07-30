@@ -1,8 +1,5 @@
-.wrapper-blue {
-    background-color: gray;
-    
-}
-.container {
+
+.main-products {
     width: 1110px;
     margin: auto;
 }
@@ -12,6 +9,7 @@
     text-align: center;
     text-transform: uppercase;
     display: block;
+    margin-top: 110px;
         
 }
 .title::after {
@@ -71,4 +69,44 @@
 .cards:hover .price {
     background-color:  #7fd9c7;
    }
+.card {
+    width: 345px;
+    height: 500px;
+    margin-right: 25px;
+    float: left;
+}
+
+
+
+.text {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    color: #777575;
+}
+.text:after {
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 10px 0 45px;    
+    width: 135px;
+    background-color:  #1abc9c;
+    vertical-align: middle;
+    
+}
+.cards-text {
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #777575;
+    padding-bottom: 17px;
+}
+.btn {
+    background-color:  #1abc9c;
+    color: #fff;
+    padding: 15px 45px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 80px;
+}
 
