@@ -61,6 +61,7 @@ ul {
     text-decoration: none;
     padding-bottom: 2rem;
     display: block;
+    text-align: center;
 }
 
 .logo:hover {
@@ -203,6 +204,7 @@ ul {
 
     .logo {
         margin-bottom: 8.5rem;
+        text-align: left;
     }
 
     .header-title {
