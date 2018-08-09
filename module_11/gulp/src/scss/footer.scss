@@ -1,0 +1,45 @@
+.container-footer {
+    @extend %container;
+    @include Flex(space-between, row, center);
+}
+
+.footer {
+    
+    border-top: 1px solid #e5e5e5;    
+    margin: auto;
+    padding-top: 12px;
+    font-size: 0;
+    padding-bottom: 12px;
+}
+
+.footer-text {
+    margin: 13px 0 13px;
+    @extend %Montserrat-regular;
+    @include Font(14px, #000, none)
+}
+
+span {
+    color: #f6a1a1;
+}
+
+.footer-form__int-1 {
+    padding: 15px 139px 15px 10px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: italic;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+    color: #d9d9d9;
+}
+
+
+.footer-form__int-2 {
+    background-color: #95e1d3;
+    padding: 16px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}

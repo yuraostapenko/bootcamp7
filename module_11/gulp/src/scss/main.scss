@@ -1,0 +1,206 @@
+.container {
+    @extend %container;
+}
+
+.services {
+    @include Flex(center, column, center);
+}
+
+.services-text {
+    @include Flex(center, column, center);
+
+    &__title {
+        @extend %Kaushan;
+        @include Font(24px, #000, none);
+        padding: 50px 0 20px;
+    }
+    
+    &__subtitle {
+        @extend %Montserrat-bold;
+        @include Font(30px, #000, uppercase);
+    }
+    &__subtitle::after {
+        content: '';
+        display: block;
+        height: 3px;
+        margin: 43px auto 65px;    
+        width: 60px;
+        background-color:  #f38181;
+        vertical-align: middle;
+    }
+}
+
+.services-card {
+    @include Flex(center, row, center);
+
+    &__list {
+        @include Flex(center, row, start);
+        width: 320px;
+        margin-bottom: 100px; 
+    }    
+}
+
+.list-text {
+    width: 270px;
+
+    &__title {
+        @include Font(14px, #000, uppercase);
+        @extend %Montserrat-bold;
+        margin-bottom: 20px;  
+    }
+
+    &__subtitle {
+        @include Font(15px, #b3b3b3, none);
+        @extend %Roboto-regular;
+    }
+}
+
+.bg-icon1 {
+    width: 32px; height: 31px;
+    background: url("../img/css_sprites.png") -62px -62px;
+    margin-right: 15px;
+}
+
+.bg-icon2 {
+    width: 32px; height: 32px;
+    background: url("../img/css_sprites.png") -10px -10px;
+    margin-right: 15px;
+}
+
+.bg-icon3 {
+    width: 32px; height: 28px;
+    background: url("../img/css_sprites.png") -114px -61px;
+    margin-right: 15px;
+}
+
+.bg-icon4 {
+    width: 32px; height: 32px;
+    background: url("../img/css_sprites.png") -62px -10px;
+    margin-right: 15px;
+}
+
+.bg-icon5 {
+    width: 32px; height: 31px;
+    background: url("../img/css_sprites.png") -114px -10px;
+    margin-right: 15px;
+}
+
+.bg-icon6 {
+    width: 32px; height: 32px;
+    background: url("../img/css_sprites.png") -10px -62px;
+    margin-right: 15px;
+}
+
+.team {
+    @include Flex(center, column, center);
+}
+
+.team-text {
+    @include Flex(center, column, center);
+    
+    &__title {
+        @extend %Kaushan;
+        @include Font(24px, #000, none);
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        @extend %Montserrat-bold;
+        @include Font(30px, #000, uppercase);
+    }
+
+    &__subtitle::after {
+        content: '';
+        display: block;
+        height: 3px;
+        margin: 43px auto 65px;    
+        width: 60px;
+        background-color:  #f38181;
+        vertical-align: middle;
+    }
+
+    &__text {
+        @include Font(15px, #b3b3b3, none);
+        @extend %Roboto-regular;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+}
+
+.team-card {
+    @include Flex(space-between, row, center);
+    width: 1200px;
+
+    &__list {
+        @include Flex(center, column, center);
+        position: relative;
+    }
+}
+
+.hidding-card:hover {
+    transform: translate(-10px, -10px);
+    transition: 200ms linear;
+}
+
+.hidding {
+    position: absolute;
+   background: linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8));
+   width: 380px;
+   height: 470px;
+   opacity: 0;
+   @include Flex(center, row, center);
+}
+
+.hidding:hover {
+    box-shadow:  10px 10px 0px 0px rgb(149, 225, 211);
+    opacity: 1;
+    transition: 200ms linear;
+}
+
+.icon-title {
+    @include Flex(center, row, center);
+    width: 380px;
+    height: 470px;
+}
+
+ .icon-cards {
+    width: 55px;
+    height: 55px;
+    transform: translate(5px, 5px);
+ }
+
+.icon-social {
+    @include Flex(center, row, center);
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+    margin-right: 1px;
+    position: relative;
+}
+
+.icon-social:hover .icon-cards{
+    fill: #fff;
+}
+
+.icon-social:hover {
+    background-color: #f38181;
+}
+
+.name-proffesion {
+    @include Flex(center, column, center);
+    padding-bottom: 80px;
+    
+    &__name {
+        @extend %Montserrat-bold;
+        @include Font(14px, #666, uppercase);
+        padding: 30px 0 15px;
+    }
+
+    &__proffesion {
+        @extend %Roboto-italic;
+        @include Font(15px, #9f9f9f, capitalize);
+
+    }
+}
+
+

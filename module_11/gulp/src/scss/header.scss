@@ -1,0 +1,93 @@
+.wrapper-header {
+    background-image: url(../img/backround-img.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    @extend %container;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.header-box {
+    @include Flex(space-between, row, center);
+
+    &__logo {
+      @extend %Montserrat-bold;
+      @include Font(30px, #fff, none);
+      text-decoration: none;  
+    }    
+}
+
+.nav__list {
+    @include Flex (space-between, row, center);
+    min-width: 610px;
+}
+
+.list__item {
+    list-style: none;
+}
+
+.list__item-link {
+    @extend %Montserrat-regular;
+    @include Font(14px, #fff, uppercase);
+    text-decoration: none;
+}
+
+.list__item-link:hover {
+    color: #fce38a;
+    padding-bottom: 12px;
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+}
+
+.list__item-link:hover .item-link__icon {
+    fill: #fce38a;  
+}
+
+.header-text {
+    @include Flex (center, column, center);
+    padding-top: 170px;
+        
+    &__title {
+        @extend %Kaushan;
+        font-style: italic;
+        @include Font(72px, #fff, capitalize);
+        padding: 115px 0 72px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        @extend %Montserrat-bold;
+        @include Font(150px, #fff, uppercase);        
+        width: 820px;
+        text-align: center;
+    }
+}
+
+.header-text__btn {
+    @extend %Montserrat-regular;
+    @include Font(14px, #fff, uppercase);
+    text-align: center;
+    border: 3px solid #fff;
+    padding: 11px 20px;
+    background: none;
+    font-weight: bold;
+    margin: 120px 0 220px;   
+}
+
+.button__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+@mixin Font ($f-sz, $f-color, $text-tarans) {
+    font-size: $f-sz;
+    color: $f-color;
+    text-transform: $text-tarans;
+ }
+
+@mixin Flex ($j-c, $f-d, $a-i) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j-c;
+    flex-direction: $f-d;
+    align-items: $a-i; 
+ }
+
+%container {
+    max-width: 1200px;
+    margin: auto;
+    flex: 0 1 1200px;
+}
+
+%Kaushan {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+ }
+
+%Montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+ }
+
+%Montserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+ }
+
+%Roboto-italic {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+ }
+
+%Roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+ }
