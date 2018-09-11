@@ -59,32 +59,33 @@ function Cashier(name, productDatabase) {
     this.customerMoney = value;
   };
   this.countTotalPrice = function (order) {
-    return Object.keys(order).arr.reduce((acc, el) => acc + productDatabase[el] * order[el], 0);
+    return (Object.keys(order)).reduce((acc, el) => acc + (productDatabase[el] * order[el]), 0);
   };
+
+
+
   this.countChange = function () {
-    if (this.customerMoney >= this.countTotalPrice(order)) {
-      return this.customerMoney - this.countTotalPrice(order);
-    } else {
-      return null;
-    }
-  };
+    const diff = this.customerMoney - this.countTotalPrice(order);
+    return diff >= 0 ? diff : null;
+  }
 
-  this.onError = function () {
-    console.log('Очень жаль, вам не хватает денег на покупки');
-  };
 
-  this.reset = function () {
-    this.customerMoney = 0;
+this.onError = function () {
+  console.log('Очень жаль, вам не хватает денег на покупки');
+};
+
+this.reset = function () {
+  this.customerMoney = 0;
+};
+this.onSuccess = function (change) {
+  if (this.countChange !== null) {
+    console.log(`Спасибо за покупку, ваша сдача ${change}!`);
+    this.reset();
+  } else {
+    this.onError();
+    this.reset();
   };
-  this.onSuccess = function (change) {
-    if (this.countChange !== null) {
-      console.log(`Спасибо за покупку, ваша сдача ${change}!`);
-      this.reset();
-    } else {
-      this.onError();
-      this.reset();
-    };
-  };
+};
 };
 
 /* Пример использования */
