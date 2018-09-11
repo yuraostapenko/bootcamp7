@@ -91,9 +91,10 @@ const users = [
       age: 39,
     },
   ];
+const getAllNames = function (arr) {return arr.map(el => el.name)};
 
-const getAllNames = users.map(el => el.name);
-console.log(getAllNames); 
+// const getAllNames = users.map(el => el.name);
+console.log(getAllNames(users)); 
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 
                             
@@ -135,7 +136,7 @@ console.log(getUsersWithAge(users, 30, 40));
 /**
  * Получить общую сумму баланса (поле balance) всех пользователей
  */
-const getTotalBalance = arr => {return users.reduce((acc, el) => acc + el.balance, 0);};
+const getTotalBalance = arr => {return users.reduce((acc, el) => acc + el.balance, 0)};
 
 console.log(getTotalBalance(users)); // 20916
                                 
@@ -147,6 +148,5 @@ const getUsersByFriend = function(arr, name) {
     return (users.filter(el => el.friends.includes(name))).map(el => el.name);
 };
 
-console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
-console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
-                                            
+// console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ];
+// console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
