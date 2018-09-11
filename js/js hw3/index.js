@@ -4,26 +4,19 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 let login = prompt('enter your login, must complete from 4 to 16 symbols');
 
 const isLoginValid = function (login) {
-    if (login.length >= 4 && login.length <= 16) {
-        return true;
-    } else {
-        return false;
-    }
-};
+   return (login.length >= 4 && login.length <= 16)}; 
+
 
 
 const isLoginUnique = function (allLogins, login) {
-       if (allLogins.includes(login)) {
-        return false;
-    } else {
-        return true;
-    }
+       
+    return allLogins.includes(login);
 };
 
 const addLogin = function (logins, login) {
-    if (isLoginValid(login) === false) {
+    if (isLoginValid(login)) {
 alert('Error! Login must be from 4 to 16 symbols');
-    } else if (isLoginUnique(logins, login) === true) {
+    } else if (isLoginUnique(logins, login)) {
             logins.push(login);
             alert('Login successfully added!');
         } else {
