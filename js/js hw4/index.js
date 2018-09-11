@@ -59,10 +59,7 @@ function Cashier(name, productDatabase) {
     this.customerMoney = value;
   };
   this.countTotalPrice = function (order) {
-    const keys = Object.keys(order);
-    let arr = keys.map(el => productDatabase[el] * order[el]);
-    let result = arr.reduce((acc, el) => acc + el, 0);
-    return result;
+    return Object.keys(order).arr.reduce((acc, el) => acc + productDatabase[el] * order[el], 0);
   };
   this.countChange = function () {
     if (this.customerMoney >= this.countTotalPrice(order)) {
@@ -71,22 +68,22 @@ function Cashier(name, productDatabase) {
       return null;
     }
   };
-  
-  this.onError = function() {
+
+  this.onError = function () {
     console.log('Очень жаль, вам не хватает денег на покупки');
   };
-  
-  this.reset = function() {
+
+  this.reset = function () {
     this.customerMoney = 0;
   };
-  this.onSuccess = function(change) {
+  this.onSuccess = function (change) {
     if (this.countChange !== null) {
       console.log(`Спасибо за покупку, ваша сдача ${change}!`);
       this.reset();
     } else {
       this.onError();
       this.reset();
-    };    
+    };
   };
 };
 
