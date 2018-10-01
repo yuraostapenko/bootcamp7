@@ -118,10 +118,11 @@ const timer = {
 function reset() {
   stop();
   
-  timer.deltaTime = null;
+ 
   document.querySelector('.time').textContent = '00:00.0';
   ul.innerHTML = '';
   document.querySelector('.js-start').textContent = 'Start';
+  clockFace = timer.deltaTime - timer.deltaTime;
 }
 let clockReset = document.querySelector('.js-reset').addEventListener('click', reset);
 
